@@ -41,4 +41,8 @@ Path for save data : /opt/docker/data/image_name
 ```
 docker run -d --name redisMapped -v /opt/docker/data/redis:/data redis - Any data which needs to be saved on the Docker Host, and not inside containers, should be stored in /opt/docker/data/redis.
 
+```
+Docker Images are built based on the contents of a Dockerfile.
+```
+docker build -t name - This command should used in build directory.The t flag is used to give a name for the build.
 
