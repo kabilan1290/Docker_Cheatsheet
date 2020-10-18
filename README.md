@@ -46,3 +46,21 @@ Docker Images are built based on the contents of a Dockerfile.
 ```
 docker build -t name - This command should used in build directory.The t flag is used to give a name for the build.
 
+```
+Creating a Dockerfile:
+All Docker images start from a base image. A base image is the same images from the Docker Registry which are used to start containers.
+
+To define a base image we use the instruction FROM <image-name>:<tag>
+
+Example : FROM nginx:1.11-alpine
+
+Run <command> - used to install packages.
+
+COPY <src> <dest> - allows you to copy files from the directory containing the Dockerfile to the container's image.
+
+EXPOSE <port> - command you tell Docker which ports should be open and can be bound to.
+
+CMD ["a","b"] - cmd a b - command that launches the application.
+
+Docker build - To build the image.
+```
