@@ -68,4 +68,15 @@ WORKDIR - We can define a working directory.
 
 Note:
 With Docker, environment variables can be defined when you launch the container.Using -e option, you can set the name and value.
+
+To prevent sensitive files or directories from being included by mistake in images, you can add a file named .dockerignore.
 ```
+docker network create backend-network - creates a network for multiple dockers to communicate.
+
+When we launch new containers, we can use the --net attribute to assign which network they should be connected to. 
+
+```
+Example : docker run -d --name=redis --net=backend-network redis
+```
+docker network ls - To view the listt of networks.
+
