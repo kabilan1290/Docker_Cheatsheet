@@ -63,4 +63,9 @@ EXPOSE <port> - command you tell Docker which ports should be open and can be bo
 CMD ["a","b"] - cmd a b - command that launches the application.
 
 Docker build - To build the image.
+
+WORKDIR - We can define a working directory.
+
+Note:
+With Docker, environment variables can be defined when you launch the container.Using -e option, you can set the name and value.
 ```
