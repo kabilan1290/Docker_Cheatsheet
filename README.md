@@ -23,6 +23,10 @@ By default docker will run on latest version
 
 docker ps - To list all running containers.
 
+docker stats <name> - To find the stats of the container.
+  
+docker ps -q | xargs docker stats - Stats of the entire containers.
+
 docker inspect <image/ContainerID> - Detailed information on the specific image.
 
 docker logs <image/ContainerID> - Display messages the container has written to standard error or standard out.
@@ -92,3 +96,12 @@ docker run -l user=12345 -d redis - The option -l used to label the docker.
 
 docker run --label-file=labels -d redis - To add a label using a label file,we use this command.it will create a label for each line in the file.
 
+docker ps --format '{{.Names}} container is using {{.Image}} image' - The option --format is used to manipulate the output as user needs.
+
+docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }} - {{ .NetworkSettings.IPAddress }} - Command for listing all the IP addresses of the running containers.
+
+docker swarm init - To Initialize swarm mode.
+
+docker node ls - To list the nodes connected.
+
+docker service ls - To list the services running on the cluster.
