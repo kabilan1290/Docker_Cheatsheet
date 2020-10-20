@@ -105,3 +105,5 @@ docker swarm init - To Initialize swarm mode.
 docker node ls - To list the nodes connected.
 
 docker service ls - To list the services running on the cluster.
+
+**The art challenges the technology, and the technology inspires the art.❤**
