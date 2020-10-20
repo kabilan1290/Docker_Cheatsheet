@@ -66,6 +66,8 @@ Docker build - To build the image.
 
 WORKDIR - We can define a working directory.
 
+LABEL vendor=Katacoda - Labeling in dockerfile.
+
 Note:
 With Docker, environment variables can be defined when you launch the container.Using -e option, you can set the name and value.
 
@@ -86,3 +88,7 @@ docker run -d --name restart-3 --restart=on-failure:3 <image> - The option --res
 
 docker run -d --name restart-always --restart=always <image> - The option will restart container until it works perfectly,we can manually stop this.
   
+docker run -l user=12345 -d redis - The option -l used to label the docker.
+
+docker run --label-file=labels -d redis - To add a label using a label file,we use this command.it will create a label for each line in the file.
+
