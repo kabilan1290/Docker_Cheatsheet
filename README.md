@@ -80,3 +80,9 @@ Example : docker run -d --name=redis --net=backend-network redis
 ```
 docker network ls - To view the listt of networks.
 
+docker logs <name> - To access the standard out and standard error outputs.
+
+docker run -d --name restart-3 --restart=on-failure:3 <image> - The option --restart=on-failure:# allows you to say how many times Docker should try again on failure.
+
+docker run -d --name restart-always --restart=always <image> - The option will restart container until it works perfectly,we can manually stop this.
+  
