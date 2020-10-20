@@ -3,7 +3,7 @@
 **What Is Docker?**
 Docker describes themselves as "an open platform for developers and sysadmins to build, ship, and run distributed applications.
 
-**Commands**
+**🔧 Commands**
 
 docker images - To list the number of available docker images.
 
